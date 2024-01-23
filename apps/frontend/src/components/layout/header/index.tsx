@@ -36,7 +36,7 @@ export default async function SiteHeader({ locale }: SiteHeaderProps)
     const menuItems = (config?.NavMenuArea ?? []).filter(Utils.isNotNullOrUndefined).map(x => x.ContentLink?.Expanded).filter(isNavMenuItem)
 
     return <header className='shadow-md'>
-        &lt;!-- AL TEST  COMMENT --&gt;
+        {/* AL TEST  COMMENT */}
         <div className='bg-stripe'>
             <div className='max-w-screen-2xl mx-auto py-3 px-4 sm:px-6 lg:px-8 flex justify-end content-stretch'>
                 <Notice text={ config?.PromoText ?? "" } className='truncate' />
